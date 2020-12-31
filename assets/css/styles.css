@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 .content {
-  background-color: black;
+  background-color: rgb(98, 98, 98);
   min-height: 100vh;
   width: 100%;
   color: white;
@@ -13,16 +15,55 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  padding: 16px;
 }
 
 .row { 
   width: 100%;
   display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.badges > a {
-  margin-right: 10px;
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: black;
+  transition: 0.3s;
+  width: 320px;
+  height: 420px;
+  border-radius: 2px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.card-picture {
+  width: 100%;
+  height: 300px;
+  border-radius: 2px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-picture > img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-body {
+  padding: 8px;
+}
+
+.card-body-title {
+  margin-bottom: 5px;
+}
+
