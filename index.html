@@ -7,44 +7,41 @@
     <link rel="icon" type="image/png" href="./favicon.png"/>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body>
-    <div class="content">
-        <div class="row">
-           <div class="card">
-               <div class="card-picture">
-                   <img class="profile-picture" src="./assets/images/profile.png" alt="Profile image">
-               </div>
-               <div class="card-body">
-                   <h2 class="card-body-title">Edson de Senna Júnior</h2>
-                   <div class="card-body-content">
-                       <p><b>Role:</b> Front-end & Cloud</p>
-                       <p><b>Age:</b> 23</p>
-                       <p><b>Country:</b> Brazil</p>
-                   </div>
-               </div>
-            </div>
 
-            <div class="card" onclick="goToPage('github.com/edsonsenna')">
-                <div class="card-picture">
-                    <img class="profile-picture" src="./assets/images/octocat.jpg" alt="Github Octocat logo">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-body-title">Github Page</h2>
-                    <div class="card-body-content">
-                        <p>Come to see my <del>bugs</del> code.</p>
-                    </div>
-                </div>
-             </div>
+<body>
+    <header>
+        <ul class="header-list">
+            <li class="header-list-item"><a href="#home">Home</a></li>
+            <li class="header-list-item"><a href="#about-me">About me</a></li>
+            <li class="header-list-item"><a href="#experience">Experience</a></li>
+            <li class="header-list-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div id="about-me" class="about-me-row row">
+            <span class="about-me-title">Who am I?</span></br>
+            <img class="about-me-image" src="./assets/images/profile.png" alt="Profile Image">
+            <span>My name is <b>Edson</b> and I'm a 24yo <b>Front-end Developer</b> from <b>Brazil</b>.</span>
+            <span>Love cycling in my free time and also learn about some new tech stuff.</span>
+            
+        </div>
+        <div class="under-construction-row row">
+            <span class="under-construction-title">Is this the end of the Personal Page?</span></br>
+            <img class="under-construction-image" src="./assets/images/not-found.png" alt="Not found image">
+            <span>Not at all, still working on updates to this page.</span><br>
+        </div>
+        <div id="contact" class="contact-row row">
+            <span><b>Social Medias:</b></span>
+            <a href="https://twitter.com/edsonsennajr">
+                <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/edsonsennajr?label=Follow%20Me&style=social">
+            </a>
+            <a href="https://github.com/edsonsenna">
+                <img alt="GitHub followers" src="https://img.shields.io/github/followers/edsonsenna?label=Follow%20Me&style=social">
+            </a>
+            <a href="https://www.linkedin.com/in/edson-senna-junior/">
+                <img alt="Linkedin" src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/edson-senna-junior">
+            </a>
         </div>
     </div>
-
-    <script>
-        function goToPage(url) {
-            Object.assign(document.createElement('a'), {
-                target: '_blank',
-                href: url,
-            }).click();
-        }
-    </script>
 </body>
 </html>
