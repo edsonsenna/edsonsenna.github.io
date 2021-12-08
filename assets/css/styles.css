@@ -111,7 +111,7 @@ header {
 
 .header-list-item {
   display: inline;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .header-list-item a {
@@ -144,3 +144,37 @@ header {
   padding: 2.5rem 30rem;
 }
 
+
+@media screen and (max-width: 540px) {
+
+  .about-me-row {
+    height: 30rem;
+    padding: 0rem 1rem 2rem;
+    border-bottom: solid 0.25px;
+  }
+  .about-me-image {
+    width: 16.5rem;
+    height: 16.5rem;
+  }
+
+  .contact-row {
+    padding: 1rem;
+    flex-direction: column;
+    height: 10rem;
+  }
+  
+  .under-construction-row {
+    height: 30rem;
+    padding: 1rem 1rem 2rem;
+    border-bottom: solid 0.25px;
+  }
+
+  .under-construction-title {
+    font-size: 2rem;
+  }
+
+  .under-construction-image {
+    width: 18rem;
+  }
+
+}
