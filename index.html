@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edson de Senna Junior</title>
-    <link rel="icon" type="image/png" href="./favicon.png"/>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
 
-<body>
-    <header>
-        <ul class="header-list">
-            <li class="header-list-item"><a href="#home">Home</a></li>
-            <li class="header-list-item"><a href="#about-me">About me</a></li>
-            <li class="header-list-item"><a href="#experience">Experience</a></li>
-            <li class="header-list-item"><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
-    <div class="content">
-        <div id="about-me" class="about-me-row row">
-            <span class="about-me-title">Who am I?</span></br>
-            <img class="about-me-image" src="./assets/images/profile.png" alt="Profile Image">
-            <span>My name is <b>Edson</b> and I'm a 24yo <b>Front-end Developer</b> from <b>Brazil</b>.</span>
-            <span>Love cycling in my free time and also learn about some new tech stuff.</span>
-            
+  <body>
+    <div class="profile-column">
+      <div class="card">
+        <div class="profile-header">
+          <img
+            src="./assets/images/profile.png"
+            alt="profile-picture"
+            width="96px"
+            height="96px"
+            class="profile-picture"
+          />
+          <p class="name">Edson de Senna Junior</p>
+          <p class="role">25yo - Front-end Developer</p>
         </div>
-        <div class="under-construction-row row">
-            <span class="under-construction-title">Is this the end of the Personal Page?</span>
-            <img class="under-construction-image" src="./assets/images/not-found.png" alt="Not found image">
-            <span>Not at all, still working on updates to this page.</span><br>
+        <div class="about-me-container">
+          <p class="about-me-title">About me</p>
+          <p class="about-me-text">
+            My name is <b>Edson</b> and I'm an enthusiast
+            <b>Front-end Developer</b> from <b>Brazil</b>. Love cycling in my
+            free time and also learning about some new tech stuff.
+          </p>
         </div>
-        <div id="contact" class="contact-row row">
-            <span><b>Social Medias:</b></span>
-            <a href="https://twitter.com/edsonsennajr">
-                <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/edsonsennajr?label=Follow%20Me&style=social">
-            </a>
-            <a href="https://github.com/edsonsenna">
-                <img alt="GitHub followers" src="https://img.shields.io/github/followers/edsonsenna?label=Follow%20Me&style=social">
-            </a>
-            <a href="https://www.linkedin.com/in/edson-senna-junior/">
-                <img alt="Linkedin" src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/edson-senna-junior">
-            </a>
+        <div class="social-container">
+          <p class="social-title">Social Medias:</p>
+          <a class="social-row" href="https://twitter.com/edsonsennajr">
+            <img
+              alt="Twitter Follow"
+              src="https://img.shields.io/twitter/follow/edsonsennajr?label=Follow%20Me&style=social"
+            />
+          </a>
+          <a class="social-row" href="https://github.com/edsonsenna">
+            <img
+              alt="GitHub followers"
+              src="https://img.shields.io/github/followers/edsonsenna?label=Follow%20Me&style=social"
+            />
+          </a>
+          <a
+            class="social-row"
+            href="https://www.linkedin.com/in/edson-senna-junior/"
+          >
+            <img
+              alt="Linkedin"
+              src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/edson-senna-junior"
+            />
+          </a>
         </div>
+      </div>
     </div>
-</body>
+
+    <div class="content-column"></div>
+  </body>
 </html>

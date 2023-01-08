@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,172 +8,100 @@
   padding: 0;
 }
 
-.about-me-row {
-  height: 30rem;
-  padding: 5rem 10rem 2rem;
+body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.about-me-image {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.about-me-title {
-  font-size: 2.5rem;
-}
-
-.badges > a {
-  margin-right: 10px;
-}
-
-.content {
-  align-items: center;
-  background-color: #ffffff;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 16px;
-  width: 100%;
-  margin-top: 3.375rem;
-}
-
-.row { 
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .card {
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   color: black;
   transition: 0.3s;
   width: 320px;
-  height: 420px;
-  border-radius: 2px;
+  min-height: 420px;
+  border-radius: 8px;
+  padding: 24px;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  cursor: pointer;
+.profile-column {
+  width: 368px;
+  background-color: red;
+  height: 100vh;
+  padding: 24px;
 }
 
-.card-picture {
-  width: 100%;
-  height: 300px;
-  border-radius: 2px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.content-column {
+  width: calc(100% - 360px);
+  background-color: blue;
+  height: 200px;
 }
 
-.card-picture > img {
-  width: 100%;
-  height: 100%;
-}
-
-.card-body {
-  padding: 8px;
-}
-
-.card-body-title {
-  margin-bottom: 5px;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  background-color: #ffffff;
-}
-
-.header-list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.header-list-item {
-  display: inline;
-  margin-right: 0.5rem;
-}
-
-.header-list-item a {
-  text-decoration: none;
-  color: black;
-}
-
-
-.header-list-item a:hover {
-  color: blue;
-}
-
-.under-construction-row {
-  flex-direction: column;
-  height: 45rem;
-  padding: 20rem 5rem 2rem;
-  align-items: center;
-}
-
-.under-construction-image {
-  margin-bottom: 2.5rem;
-}
-
-.under-construction-title {
-  font-size: 2.5rem;
-}
-
-.contact-row {
-  height: 5rem;
-  padding: 2.5rem 30rem;
-}
-
-
-@media screen and (max-width: 540px) {
-
-  .about-me-row {
-    height: 30rem;
-    padding: 0rem 1rem 2rem;
-    border-bottom: solid 0.25px;
-  }
-  .about-me-image {
-    width: 16.5rem;
-    height: 16.5rem;
-  }
-
-  .contact-row {
-    padding: 1rem;
+@media screen and (max-width: 720px) {
+  body {
     flex-direction: column;
-    height: 10rem;
   }
-  
-  .under-construction-row {
-    height: 30rem;
-    padding: 1rem 1rem 2rem;
-    border-bottom: solid 0.25px;
-  }
+}
 
-  .under-construction-title {
-    font-size: 2rem;
-  }
+.profile-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
 
-  .under-construction-image {
-    width: 18rem;
-  }
+.profile-picture {
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
 
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: 16px;
+  line-break: 18px;
+  font-weight: 500;
+}
+
+.about-me-container {
+  margin-bottom: 24px;
+}
+
+.about-me-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+
+.about-me-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: justify;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.social-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 16px;
 }
