@@ -10,6 +10,7 @@
 
 body {
   display: flex;
+  background-color: #31316f;
 }
 
 .card {
@@ -17,23 +18,22 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   color: black;
   transition: 0.3s;
-  width: 320px;
+  min-width: 320px;
   min-height: 420px;
   border-radius: 8px;
   padding: 24px;
 }
 
 .profile-column {
-  width: 368px;
-  background-color: red;
   height: 100vh;
   padding: 24px;
+  width: 368px;
 }
 
 .content-column {
-  width: calc(100% - 360px);
-  background-color: blue;
   height: 200px;
+  padding: 24px;
+  width: calc(100% - 360px);
 }
 
 @media screen and (max-width: 720px) {
@@ -104,4 +104,23 @@ body {
   font-weight: 700;
   line-height: 18px;
   margin-bottom: 16px;
+}
+
+.experience-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.experience-container-title {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
