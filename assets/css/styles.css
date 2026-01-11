@@ -1,180 +1,297 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/geist@1.2.0/dist/fonts/geist-sans/style.min.css");
 
 * {
   box-sizing: border-box;
-  font-family: Nunito, Helvetica, sans-serif;
-  font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
-.about-me-row {
-  height: 30rem;
-  padding: 5rem 10rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+html {
+  font-size: 16px;
 }
 
-.about-me-image {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.about-me-title {
-  font-size: 2.5rem;
-}
-
-.badges > a {
-  margin-right: 10px;
-}
-
-.content {
-  align-items: center;
-  background-color: #ffffff;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+body {
+  font-family: "Geist Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
   min-height: 100vh;
-  padding: 16px;
-  width: 100%;
-  margin-top: 3.375rem;
 }
 
-.row { 
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 80px 24px;
 }
 
-.col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 80px;
 }
 
-.card {
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  color: black;
-  transition: 0.3s;
-  width: 320px;
-  height: 420px;
-  border-radius: 2px;
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  border: 2px solid #333;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  cursor: pointer;
-}
-
-.card-picture {
-  width: 100%;
-  height: 300px;
-  border-radius: 2px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card-picture > img {
-  width: 100%;
-  height: 100%;
-}
-
-.card-body {
-  padding: 8px;
-}
-
-.card-body-title {
-  margin-bottom: 5px;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  background-color: #ffffff;
-}
-
-.header-list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.header-list-item {
-  display: inline;
-  margin-right: 0.5rem;
-}
-
-.header-list-item a {
-  text-decoration: none;
-  color: black;
-}
-
-
-.header-list-item a:hover {
-  color: blue;
-}
-
-.under-construction-row {
-  flex-direction: column;
-  height: 45rem;
-  padding: 20rem 5rem 2rem;
-  align-items: center;
-}
-
-.under-construction-image {
-  margin-bottom: 2.5rem;
-}
-
-.under-construction-title {
+.name {
   font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
 }
 
-.contact-row {
-  height: 5rem;
-  padding: 2.5rem 30rem;
+.title {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 24px;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
 
-@media screen and (max-width: 540px) {
+.social-links a {
+  color: #fff;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
 
-  .about-me-row {
-    height: 30rem;
-    padding: 0rem 1rem 2rem;
-    border-bottom: solid 0.25px;
-  }
-  .about-me-image {
-    width: 16.5rem;
-    height: 16.5rem;
+.social-links a:hover {
+  opacity: 1;
+}
+
+/* Sections */
+section {
+  margin-bottom: 64px;
+}
+
+h2 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+/* About */
+.about p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.about strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ccc;
+  transition: all 0.2s ease;
+}
+
+.skill:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Experience */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 24px;
+  border-left: 1px solid #333;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.period {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeline-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 4px 0;
+}
+
+.company {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #888;
+}
+
+/* Cycling Section */
+.cycling-intro {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #ccc;
+  margin-bottom: 32px;
+}
+
+.strava-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat {
+  text-align: center;
+  padding: 24px 16px;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.strava-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #888;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.strava-link:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* Contact */
+.email-link {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.email-link:hover {
+  border-color: #fff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 80px;
+  padding-top: 32px;
+  border-top: 1px solid #222;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.footer .heart {
+  color: #fff;
+}
+
+.footer .copyright {
+  font-size: 0.75rem;
+  color: #444;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 48px 20px;
   }
 
-  .contact-row {
-    padding: 1rem;
-    flex-direction: column;
-    height: 10rem;
-  }
-  
-  .under-construction-row {
-    height: 30rem;
-    padding: 1rem 1rem 2rem;
-    border-bottom: solid 0.25px;
+  .name {
+    font-size: 1.75rem;
   }
 
-  .under-construction-title {
-    font-size: 2rem;
+  .title {
+    font-size: 1rem;
   }
 
-  .under-construction-image {
-    width: 18rem;
+  .social-links {
+    gap: 20px;
   }
 
+  section {
+    margin-bottom: 48px;
+  }
+
+  .about p,
+  .cycling-intro {
+    font-size: 1rem;
+  }
+
+  .strava-stats {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .stat {
+    padding: 20px;
+  }
+
+  .stat-value {
+    font-size: 1.25rem;
+  }
 }
