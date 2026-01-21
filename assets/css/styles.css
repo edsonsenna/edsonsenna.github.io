@@ -170,33 +170,29 @@ h2 {
   margin-bottom: 32px;
 }
 
-.strava-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 32px;
-}
-
-.stat {
-  text-align: center;
-  padding: 24px 16px;
+.strava-embed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
   border: 1px solid #333;
   border-radius: 8px;
+  margin-bottom: 32px;
+  background-color: #0a0a0a;
 }
 
-.stat-value {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 4px;
-}
-
-.stat-label {
+.strava-label {
   font-size: 0.75rem;
+  font-weight: 500;
   color: #666;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.strava-embed-container iframe {
+  border-radius: 4px;
+  max-width: 100%;
 }
 
 .strava-link {
@@ -282,16 +278,7 @@ h2 {
     font-size: 1rem;
   }
 
-  .strava-stats {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .stat {
+  .strava-embed-container {
     padding: 20px;
-  }
-
-  .stat-value {
-    font-size: 1.25rem;
   }
 }
